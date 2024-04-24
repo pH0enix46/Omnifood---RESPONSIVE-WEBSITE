@@ -1,6 +1,6 @@
 ## This project is based on Jonas Schmedtmann's [HTML & CSS](https://www.udemy.com/user/jonasschmedtmann/) course. You should check his course. All the credits go to my beautiful teacher Jonas Schmedtmann--
 
-DEMO: [Dice Game](https://ph0enix46.github.io/Omnifood---RESPONSIVE-WEBSITE/)
+DEMO: [Omnifood---RESPONSIVE-WEBSITE](https://ph0enix46.github.io/Omnifood---RESPONSIVE-WEBSITE/)
 
 ![Demo 1](img/demo-pic/1.png)
 
