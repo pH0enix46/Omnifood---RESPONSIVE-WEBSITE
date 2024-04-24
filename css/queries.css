@@ -1,0 +1,307 @@
+/* 😎😎 DESKTOP FIRST 😎😎 */
+
+/* BELOW 1344px(Smaller Desktops)✅✅✅ */
+@media (max-width: 84em) {
+  /* 1344px / 16px = 84em / 84rem */
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* ⛔⛔⛔ */
+
+/* BELOW 1200px(Landscape Tablets)✅✅✅ */
+@media (max-width: 75em) {
+  /* 1200 / 16 = 75em / 75rem */
+  html {
+    /* jehetu ami sob css rem er upor base kore likhchi tai ekhane font size change korte gele root element(html) er font size k change korte hobe then rem dhore ekhane kaj korle sob thik thakbe */
+    font-size: 56.25%;
+    /* 9px / 16px = 0.5625px(56.25%) */
+    /* now, 1rem = 9px */
+    /* ek kothay oitake override korlam */
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+/* ⛔⛔⛔ */
+
+/* BELOW 944px(Tablets)✅✅✅ */
+@media (max-width: 59em) {
+  /* 59em * 16px = 944px */
+  html {
+    /* 8px / 16px = 0.5px = 50% */
+    /* now, 1rem = 8px */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    /* 3/5 = 60% + 2/5 = 40% */
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+
+  /* MOBILE NAVIGATION📱✅📱 */
+  .btn-mobile-nav {
+    display: block;
+    /* menu-outline show korbe */
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+
+    backdrop-filter: blur(10px);
+    /* For Stupid Safari */
+    /* -webkit- k bole prefix */
+    -webkit-backdrop-filter: blur(10px);
+
+    position: absolute;
+    /* ekhon etar jonno parent element k relative dite hobe eito? etar parent element kintu entire viewport. tai header k relative dite hobe */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    transform: translateX(100%);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation✅ */
+    /* 1) transitions not work */
+    /* display: none; */
+
+    /* Correct way😮 */
+    /* 1) Hide it visually */
+    opacity: 0;
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    /* navigation open korte caile hidden jinish gulo abar back kore dite hobe */
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    /* ekhane parent kintu durer child keu call korche etau possible */
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/* BELOW 704px(Smaller Tablets)✅✅✅ */
+@media (max-width: 44em) {
+  /* 704px / 16px = 44em / 44rem */
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-col {
+    grid-row: 1;
+    /* nav-col 1st row te jabe */
+
+    grid-column: span 2;
+    /* span 2 mane 2 ghor prosarito, span use korlam jate ek dhele onek pakhi mara jay */
+    /* mane ekhak ta nav-col 2 ghor kore pabe, ei kore 6 ta columns e jayga nibe. dev tools e see */
+    margin-bottom: 3.2rem;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+    /* ekjon 3 ghor arekjon 3 ghor. ei kore 6 ta columns e jayga nibe */
+  }
+}
+/* ⛔⛔⛔ */
+
+/* BELOW 544px(Phones)✅✅✅ */
+@media (max-width: 34em) {
+  /* 544px / 16px = 34rem / 34em */
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    /* 2 likhlam karon eta kintu container er 2 number child valo kore dekhi, jodio container ekhane add kori nai */
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    /* pic gulo k ektu niche soralam */
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    /* height dile pic dekha jabe karon, amra kintu pic er div element e kono content dei nai, so ekhane height dile pic dekha jabe */
+    grid-row: 1;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+}
+/* ⛔⛔⛔ */
