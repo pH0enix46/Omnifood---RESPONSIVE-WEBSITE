@@ -9,7 +9,7 @@ This project is based on Jonas Schmedtmann's [HTML & CSS](https://www.udemy.com/
 ✅[View demo](https://ph0enix46.github.io/Omnifood---RESPONSIVE-WEBSITE/) 🐛[Bug report](https://github.com/pH0enix46/Omnifood---RESPONSIVE-WEBSITE/issues)
 
 
-## About Omnifood
+## About
 We are a technology company first, but with a major focus on consumer well-being through a healthy diet. Most people are very busy with their jobs, family and friends, and other important activities, which doesn't leave much time for cooking. 
 
 We want to solve this problem by using an AI-centric approach. Users can use our app to select their diet and foods they like and dislike, and our AI algorithm will create a custom and individual weekly meal plan. 
