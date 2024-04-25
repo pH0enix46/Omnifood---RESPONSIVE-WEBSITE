@@ -30,7 +30,7 @@ All this will be packed up in a monthly subscription, where users can choose bet
 
 Clone the repo
 ```
-  https://github.com/pH0enix46/Omnifood---RESPONSIVE-WEBSITE.git
+https://github.com/pH0enix46/Omnifood---RESPONSIVE-WEBSITE.git
 ```
 ✅Enjoy! for learning 
 
