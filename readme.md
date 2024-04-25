@@ -34,7 +34,7 @@ Clone the repo
 ```
 ✅Enjoy! for learning 
 
-❌But don't copy
+❌But don't copy mine
 ## Acknowledgments
 My lovely teacher [Jonas Schmedtmann](https://github.com/jonasschmedtmann)
 
